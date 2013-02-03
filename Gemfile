@@ -7,6 +7,8 @@ gem 'rails', '3.2.11'
 
 gem 'sqlite3'
 gem 'haml-rails'
+gem 'jquery-rails'
+gem 'devise', '2.2.3'
 
 
 # Gems used only for assets and not required
@@ -16,14 +18,9 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'bootstrap-sass'
   gem 'font-awesome-rails'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
 group :development do
   gem 'thin'
@@ -35,6 +32,10 @@ group :test, :development do
   gem 'meta_request'
 end
 
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
