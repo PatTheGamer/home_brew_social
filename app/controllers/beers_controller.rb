@@ -1,4 +1,6 @@
 class BeersController < ApplicationController
+
+  before_filter :authenticate_user!, except: [:index,:show]
   # GET /beers
   # GET /beers.json
   def index

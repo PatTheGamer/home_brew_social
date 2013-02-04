@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'devise', '2.2.3'
 gem 'simple_form'
 gem 'country_select'
+gem 'bcrypt-ruby'
 
 
 # Gems used only for assets and not required
@@ -41,7 +42,6 @@ group :test do
 end
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
