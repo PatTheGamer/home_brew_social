@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20130203211421) do
     t.string   "unconfirmed_email"
     t.boolean  "admin"
     t.boolean  "moderator"
+    t.string   "name"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
   end

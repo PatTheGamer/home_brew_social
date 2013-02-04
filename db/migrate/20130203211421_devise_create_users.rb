@@ -35,6 +35,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
       t.boolean :admin
       t.boolean :moderator
+      t.string :name
 
       t.timestamps
     end

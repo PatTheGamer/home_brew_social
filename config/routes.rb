@@ -3,7 +3,7 @@ HomeBrewSocial::Application.routes.draw do
 
   resources :beers
 
-  root to: 'beers#index'
+  root :to=> 'beers#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
