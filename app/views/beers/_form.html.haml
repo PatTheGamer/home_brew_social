@@ -1,4 +1,4 @@
-= form_for @beer do |f|
+= simple_form_for @beer do |f|
   - if @beer.errors.any?
     #error_explanation
       %h2= "#{pluralize(@beer.errors.count, "error")} prohibited this beer from being saved:"
@@ -6,11 +6,14 @@
         - @beer.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
+  .control-group
     = f.label :name
-    = f.text_field :name
-  .field
+    .controls
+      = f.text_field :name
+  .control-group
     = f.label :description
-    = f.text_area :description
-  .actions
-    = f.submit 'Save'
+    .controls
+      = f.text_area :description
+  .control-group
+    .controls
+      = f.button :submit, 'Save', class: 'btn btn-primary'
