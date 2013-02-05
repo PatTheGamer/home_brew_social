@@ -23,6 +23,7 @@ group :assets do
   gem 'font-awesome-rails'
   gem 'select2-rails'
   gem 'uglifier', '>= 1.0.3'
+  gem 'rails-backbone'
 end
 
 
